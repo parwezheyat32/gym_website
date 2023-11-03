@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym website</title>
+
+    <style>
+        body {
+            color: red;
+            height: 400px;
+            margin: 0px;
+            padding: 0px;
+            background: url('gym.jpg');
+
+        }
+
+        .left {
+            /* border:2px solid cyan; */
+            display: inline-block;
+            position: absolute;
+            left: 28px;
+            top: 26px;
+
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 500px;
+            margin: auto;
+            margin-top: 26px;
+            padding: 13px;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 28px;
+            top: 26px;
+
+            /* border: 2px solid yellow; */
+
+        }
+
+        .navbar ul li {
+            display: inline-block;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            font-size: 22px;
+        }
+
+        .navbar ul li a:hover {
+            color: rgb(220, 151, 67);
+            text-decoration: underline;
+        }
+
+        .left img {
+            display: block;
+            width: 69px;
+            margin: auto;
+            /* filter: invert(100%);    This is used to make black image white or vise-versa*/
+        }
+
+        .search {
+            padding: 5px;
+            padding: 6px;
+            margin: -3px;
+            margin-top: 15px;
+        }
+
+        #entry {
+            color: whitesmoke;
+            margin: 84px;
+            padding: 5px;
+            /* border: 2px solid yellow; */
+            font-size: x-large;
+            font-family: cursive;
+
+        }
+
+        #submition {
+            font: black;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="backend.php">
+        <header class="header">
+
+            <div class="left">
+                <img src="logo.png" alt="error loading image">
+                <div style="color:rgb(112, 243, 219)">Heyat fitness Academy</div>
+
+            </div>
+            <div class="mid">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="https://google.com">Home</a></li>
+                        <li><a href="https://en.wikipedia.org">About us</a></li>
+                        <li><a href="#">Exercise</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <input class="search" type="text" placeholder="search">
+            </div>
+
+
+
+
+            <!-- Here Forms starts -->
+
+            <div class="form" id="entry">
+                <label for="name">Name: </label>
+                <div>
+                    <input type="text" name="name">
+                </div>
+                <label for="age">Age: </label>
+                <div>
+                    <input type="text" name="age">
+
+                </div>
+                <label for="email">Email:</label>
+                <div>
+                    <input type="text" name="email">
+                </div>
+                <label for="gender">Gender:</label>
+                <div>
+                    Male<input type="radio" name="gender">
+                    Female<input type="radio" name="gender">
+                    Others<input type="radio" name="gender">
+                </div>
+                <label for="dateOfEntry">
+                </label>
+                <div>
+                    Date of Entry:<input type="date" name="dateOfEntry">
+                </div>
+                <label for="adhaar">
+                </label>
+                <div>
+                    Adhaar:<input type="number" name="adhaar">
+                </div>
+                <label for="address">Address:</label>
+                <div>
+                    <textarea name="Address" id="address" cols="40" rows="3"></textarea>
+                </div>
+                <div id="submition">
+                    <label for="submition">
+                        <input type="submit" id="submition">
+                        <input type="reset" id="submition">
+                    </label>
+                </div>
+
+            </div>
+
+        </header>
+    </form>
+
+</body>
+
+</html>
